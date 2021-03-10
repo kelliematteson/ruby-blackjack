@@ -1,13 +1,3 @@
-#################
-#### Blackjack####
-#################
-##  added by -Kevin
-##  more changes
-##a RANDOM CHANGE 
-##added my Dev branch- kellie
-## MORE PRACTICE ADDING MY OWN DEV BRANCH- ONLY FOR WORKING ON MY MACHINE
-
-
 #Classes
     #Player
         #main class
@@ -81,7 +71,7 @@
             end
         end
 #The Deck
-    #empty array
+    
     class Deck
         attr_reader :deck
         # ranks/suits for each of the cards
@@ -107,39 +97,15 @@
     new_deck = Deck.new
     human.bankroll = 100
     computer.bankroll = 1000
-    # p new_deck.deck
-
     p new_deck.deck
     computer.get_card new_deck.deck
     human.get_card new_deck.deck
     # p human 
     # p computer
     # randomized the deck we created using shuffle method
+    new_deck.shuffle
     # prints the new fully shuffled deck that was created
-# p new_deck
 
-#Gameplay
-    #Player chooses their name
-        #creates a new player class
-    #Game start 
-        #method: *deal* two random cards generated for house and player
-        # need a method to remove the cards taken so no card is taken twice 
-            #sample method (grabs random items from array) Kellie, Andrea
-        #method: *add_cards* adds the two randomly generated cards for house and player
-        #method: *compare* compare the total of cards generated for house and player 
-            #Allegra and Parker
-        #method: *win* substracts 10 from the losing party and adds 10 to the winning party
-            ## bankroll- updating Kevin, Marsallis
-            #tie > puts a message to the player. nothing is affected.
-         #win Joe/
-        ##consider writing a switch case statement to cover all situations
-#joe commit test goat
-#goat squad
-#andrea was here!
-# both_cards = [human.cards[0].value,  human.cards[1].value]
-# # p human.cards[0].value
-# # p human.cards[1].value
-# p both_cards
 human_hand = [human.cards[0].value, human.cards[0].suit, human.cards[1].value, human.cards[1].suit]
 p "human hand is: #{human_hand}"
 card_total = human.cards[0].value += human.cards[1].value
@@ -161,3 +127,33 @@ if card_total == computer_card_total
 end
 
 ### while loop to keep the game going until one player loses all their money or player quit
+
+#Gameplay
+    #Player chooses their name
+        #creates a new player class
+    #Game start 
+        #method: *deal* two random cards generated for house and player
+        # need a method to remove the cards taken so no card is taken twice 
+            #sample method (grabs random items from array) Kellie, Andrea
+        #method: *add_cards* adds the two randomly generated cards for house and player
+        #method: *compare* compare the total of cards generated for house and player 
+            #Allegra and Parker
+        #method: *win* substracts 10 from the losing party and adds 10 to the winning party
+            ## bankroll- updating Kevin, Marsallis
+            #tie > puts a message to the player. nothing is affected.
+         #win Joe/
+        ##consider writing a switch case statement to cover all situations
+##############UPDATED GAME STRUCTURE #########################################
+
+# start_game Function - Allegra
+    
+        # get_name method Ryan
+        # dealing_cards method 
+        # comparison method (adding the cards, announcing winner) Kevin, Marsallis
+        # updates the bankroll - Parker
+        # continue the game or Quit? method Joe
+
+    
+
+
+
