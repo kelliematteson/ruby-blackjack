@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # function to get players name & asks them if they want to play via console. The response to "do you want to play" can be tied to the game loop maybe? If we still want to go that way. 
 
 def get_name 
@@ -12,7 +10,6 @@ end
 get_name 
 
 
->>>>>>> b20282517915458c93590b260c58a28f3e3379d8
 #Classes
     #Player
         #main class
@@ -112,13 +109,9 @@ get_name
     new_deck = Deck.new
     human.bankroll = 100
     computer.bankroll = 1000
-<<<<<<< HEAD
-    p new_deck.deck
-=======
     # p new_deck.deck
 
     new_deck.deck
->>>>>>> b20282517915458c93590b260c58a28f3e3379d8
     computer.get_card new_deck.deck
     human.get_card new_deck.deck
     # p human 
